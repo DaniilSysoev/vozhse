@@ -20,7 +20,7 @@ def upload_to_gdrive(file_from_request):
     creds_json = os.path.dirname(__file__) + '/static/schoolofleader/credentials.json'
     gauth.credentials = ServiceAccountCredentials.from_json_keyfile_name(creds_json, scope)
     drive = GoogleDrive(gauth)
-    file = drive.CreateFile({'parents': [{'id': '1gU1jJEBEMYjSPLvLqUJgLif5ausx32RY'}]})
+    file = drive.CreateFile({'parents': [{'id': ''}]})
     file['title'] = file_from_request.name
     file.SetContentFile(os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir)) + '/media/' + file_from_request.name)
     file.Upload()
@@ -37,7 +37,7 @@ def get_service_sacc():
 def push_django_form(saved_form):
     service = get_service_sacc()
     sheet = service.spreadsheets()
-    sheet_id = '1LyoBHUVUEJTQuy0JQSTBj-wKc7PzO2zjZyNxW9_2SjY'
+    sheet_id = ''
     resp = sheet.values().append(
         spreadsheetId=sheet_id,
         range='Регистрация!A2',
