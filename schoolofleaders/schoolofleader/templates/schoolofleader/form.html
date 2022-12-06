@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа Вожатых - регистрация</title>
+    <link rel="stylesheet" href="{% static 'schoolofleader/css/form.css' %}">
+    <!-- <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'> -->
+    <link rel="stylesheet" href="{% static 'schoolofleader/css/fonts.css' %}">
+    <link rel="icon" href="{% static 'schoolofleader/img/logoicon.png' %}" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <a href="{% url 'index' %}"><img src="{% static 'schoolofleader/img/schoollogo.png' %}" alt="лого школы вожатых" class="header__school_logo"></a>
+            <a href="{% url 'index' %}"><img src="{% static 'schoolofleader/img/kidslogo.png' %}" alt="лого вышки детям" class="header__kids_logo"></a>
+        </div>
+        <a href="https://vk.com/vozhse">
+            <img src="{% static 'schoolofleader/img/vklogo.png' %}" alt="лого вк школы вожатых" class="header__vk_logo" href="https://vk.com/vozhse">
+        </a>
+    </header>
+    <section class="form">
+        <form name="form" method="post" class="form__container" enctype="multipart/form-data" onsubmit="validate(); return false;">
+            <img src="{% static 'schoolofleader/img/star1.png' %}" alt="" class="star1">
+            <img src="{% static 'schoolofleader/img/star2.png' %}" alt="" class="star2">
+            <img src="{% static 'schoolofleader/img/star3.png' %}" alt="" class="star3">
+            <img src="{% static 'schoolofleader/img/star4.png' %}" alt="" class="star4">
+            <img src="{% static 'schoolofleader/img/star5.png' %}" alt="" class="star5">
+            <img src="{% static 'schoolofleader/img/star3.png' %}" alt="" class="star6">
+            {% csrf_token %}
+            <div class="form__title">
+                Регистрация
+            </div>
+            <div class="form__check">
+                <span>Студент ли ты НИУ ВШЭ?</span>
+                <div><input type="radio" id="yes" class="check_university" required><span>Да</span></div>
+                <div><input type="radio" id="no" class="check_university" required><span>Нет</span></div>
+                <span class="sad_message">К сожалению, только студенты НИУ ВШЭ могут принимать участие в этом проекте.<br>Желаем тебе удачи, друг! Ты на верном пути!</span>
+            </div>
+            <div class="form__section">
+                <span class="form__text"></span>
+                <div class="input__container">
+                    <div class="form__text">
+                        Готов ли ты выделять время для просмотра лекций<br>и выполнения дз? (примерно 3-4 часа в неделю)
+                    </div>
+                    <div class="form__radio">
+                        <div><input type="radio" name="question_13" value="Да" required disabled><span>Да</span></div>
+                        <div><input type="radio" name="question_13" value="Нет" required disabled><span>Нет</span></div>
+                    </div>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Почему ты хочешь прослушать курс лекций<br>ШВ НИУ ВШЭ?
+                    </div>
+                    <textarea name="question_14" cols="30" rows="10" required disabled></textarea>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Работал ли ты уже вожатым или помощником вожатого? Был ли у тебя опыт работы с детьми?
+                    </div>
+                    <textarea name="question_15" cols="30" rows="10" required disabled></textarea>
+                </div>
+                <div class="input__checkbox">
+                    <input id="highload0" class="checkbox-custom" name="checkbox" type="checkbox" required disabled>
+                    <label for="highload0" class="checkbox-custom-label">Я согласен(на) на обработку персональных данных</label>
+                </div>
+            </div>
+            <div class='form__section'>
+                <div class="input__container">
+                    <div class="form__text">
+                        ФИО
+                    </div>
+                   <input type="text" name="name" id="name" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Дата рождения
+                    </div>
+                   <input type="date" name="birthday" id="birthday" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Возраст
+                    </div>
+                   <input type="text" name="age" id="age" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Факультет полностью и без сокращений
+                    </div>
+                   <input type="text" name="faculty" id="faculty" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Образовательная программа полностью<br>и без сокращений
+                    </div>
+                   <input type="text" name="programm" id="programm" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        В каком кампусе ты обучаешься?
+                    </div>
+                    <div class="form__radio">
+                        <div><input type="radio" class="campus moscow" name="campus" value="Москва" required disabled><span>Москва</span></div>
+                        <div><input type="radio" class="campus nn" name="campus" value="Нижний Новгород" required disabled><span>Нижний Новгород</span></div>
+                        <div><input type="radio" class="campus perm" name="campus" value="Пермь" required disabled><span>Пермь</span></div>
+                        <div><input type="radio" class="campus piter" name="campus" value="Питер" required disabled><span>Санкт-Петербург</span></div>
+                    </div>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Курс
+                    </div>
+                    <input type="text" name="course" id="course" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Укажи свой номер в формате +79200000000
+                    </div>
+                    <input type="text" name="number" id="number" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Электронная почта, на которую придёт рассылка
+                    </div>
+                    <input type="text" name="mail" id="mail" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Ссылка на Telegram в формате https://t.me/i_ivanov2003
+                    </div>
+                    <input type="text" name="telegram" id="telegram" required disabled>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Ссылка на действующую страницу в ВК в формате https://vk.com/i_ivanov2003
+                    </div>
+                    <input type="text" name="vk" id="vk" required disabled>
+                </div>
+            </div>
+            <div class="form__section">
+                <div class="input__container">
+                    <div class="form__text margin_top">
+                        После окончания нашей Школы вожатых,<br>при успешной сдачи экзаменов, ты получишь сертификат государственного образца от РСО, который позволит трудоустроиться в лагерь твоей мечты! Прохождение лекций на платформе<br>РСО является обязательным условием участия в проекте ШВ’23. 
+                    </div>
+                    <div class="form__text__about margin_top">
+                        Готов(а) ли ты внести 1500 рублей за образовательную платформу и членский взнос* в РСО?
+                    </div>
+                    <div class="form__radio">
+                        <div><input type="radio" name="ready_or_not" value="Готов" required><span>Да</span></div>
+                        <div><input type="radio" name="ready_or_not" value="Не готов" required><span>Нет</span></div>
+                        <span class="sad_message_2">*взнос обязателен для участия в Школе</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form__section">
+                <span class="form__text">Теперь мы хотим познакомиться с тобой чуть ближе! Постарайся честно, в первую очередь для себя, ответить на вопросы ниже.</span>
+                <div class="input__container">
+                    <div class="form__text">
+                        Проходил(а) ли ты уже Школу вожатых? 
+                        Если да,<br>то в варианте «Другое» укажи какую ШВ ты проходил(а)
+                    </div>
+                    <div class="form__radio question_1">
+                        <div><input type="radio" name="question_1" value="Нет" id="question_1_no" required><span>Нет</span></div>
+                        <div><input type="radio" name="question_1" value="Нет, но подавался раньше" id="question_1_another_no" required><span>Нет, но подавался на ШВ от НИУ ВШЭ в прошлом году </span></div>
+                        <div>
+                            <input type="radio" name="question_1" id="question_1_other" required>
+                            <span>Другое</span>
+                        </div>
+                        <textarea name="question_1" cols="30" rows="10" required style="opacity: 70%" id="question_1_textarea" disabled></textarea>
+                    </div>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Работал(а) ли ты уже вожатым? 
+                    </div>
+                    <div class="form__radio">
+                        <div><input type="radio" name="question_2" value="Да" required><span>Да</span></div>
+                        <div><input type="radio" name="question_2" value="Нет" required><span>Нет</span></div>
+                        <div><input type="radio" name="question_2" value="Работал помощником" required><span>Работал(а) помощником вожатого (или подобно этому)<br> без официального трудоустройства</span></div>
+                    </div>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Какие у тебя цели участия в проекте<br>Школа Вожатых? (сформулируй минимум три)
+                    </div>
+                    <textarea name="question_3" id="question_3" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Что тебе нравится в работе вожатым?<br>Почему решил этим заниматься?
+                    </div>
+                    <textarea name="question_4" id="question_4" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        В чём видишь свой профессиональный потенциал? Где хочешь работать после ШВ и по каким критериям будешь выбирать место работы?
+                    </div>
+                    <textarea name="question_5" id="question_5" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Расскажи о своём опыте участия во внеучебной деятельности или опыте организации<br>каких-либо мероприятий
+                    </div>
+                    <textarea name="question_6" id="question_6" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Готов(а) ли ты уделять ШВ часть воскресенья<br>и 1-2 вечера по будним дням (посещение лекций<br>и практических занятий, выполнение<br>домашних заданий)?
+                    </div>
+                    <div class="form__radio">
+                        <div><input type="radio" name="question_7" value="Да" required><span>Да</span></div>
+                        <div><input type="radio" name="question_7" value="Нет" required><span>Нет</span></div>
+                    </div>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Как ты планируешь совмещать участие в ШВ<br>со своей повседневной жизнью?
+                    </div>
+                    <textarea name="question_8" id="question_8" cols="30" rows="10" required></textarea>
+                </div>
+            </div>
+            <div class="form__section">
+                <div class="input__container">
+                    <div class="form__text">
+                        Тебе предстоит выполнить небольшое творческое задание. Вожатому важно быть творческим.<br>И уметь выходить из сложных ситуаций!
+                    </div>
+                    <div class="form__text__about">
+                        <p>Нужно составить небольшой коллаж или mind map о себе как о личности. Расскажи нам, какой ты человек, используй картинки или свои фотографии, полёт фантазии ничем не ограничен! Пример коллажа ты найдешь <a href="{% static 'schoolofleader\img\photo_example.jpeg'%}" class="photo_example" download><u><strong>здесь.</strong></u></a></p>
+                        <p>Будет оцениваться смысловая нагрузка, то есть ты рассказал ценную информацию о себе, а также креативность — мы не требуем, чтобы это было высшее дизайнерское искусство. Делай, как умеешь.<br>Главное — с удовольствием!</p>
+                    </div>
+                    <div class="input__file">
+                        <input type="file" name="file" id="file" required class="file_selector">
+                        Прикрепить файл (pdf, jpeg, jpg, png)
+                    </div>
+                    <span class="file__span fiel__span_hide">название файла</span>
+                    <span class="sad_message_2">*В названии файла укажите свое ФИО.</span>
+                </div>
+            </div>
+            <div class="form__section">
+                <span class="form__text">Хух, это последний раздел! Здесь ты найдёшь вопросы, чтобы «порассуждать». Нет правильных<br>и неправильных ответов — пиши как чувствуешь! </span>
+                <div class="input__container">
+                    <div class="form__text">
+                        Кем вожатый является для ребенка? (учитель/друг/помощник и т.п.)
+                    </div>
+                    <textarea name="question_9" id="question_9" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Ты считаешь профессию вожатого простой<br>или сложной? Почему?
+                    </div>
+                    <textarea name="question_10" id="question_10" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        Каким должен быть идеальный вожатый? 
+                    </div>
+                    <textarea name="question_11" id="question_11" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input__container">
+                    <div class="form__text">
+                        <p>Напиши 3 главных ценности вожатого при работе<br>с детьми</p> 
+                        <p class="form__text__about">(Пример: 1. Уважение. Нужно уважать коллег, работающих с тобой вместе, своё руководство, родителей детей, обслуживающий персонал, детей,<br>с которыми ты работаешь. )</p>
+                    </div>
+                    <textarea name="question_12" id="question_12" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input__checkbox">
+                    <input id="highload1" class="checkbox-custom" name="checkbox" type="checkbox" required>
+                    <label for="highload1" class="checkbox-custom-label">Я согласен(на) на обработку персональных данных</label>
+                </div>
+            </div>
+            <div class="form__section">
+                <span class="form__text">
+                    <p>Ну все, друг, если ты дошёл до этого раздела, значит, ты и правда хочешь в Школу вожатых!<br>Мы это очень ценим!</p>
+                    <p>А пока скажем тебе по секрету — у нас будет классный мерч!</p>
+                </span>
+                <div class="input__container">
+                    <div class="form__text">
+                        Какой у тебя размер одежды?
+                    </div>
+                    <div class="form__radio">
+                        <div><input type="radio" name="size" value="XS" required><span>XS</span></div>
+                        <div><input type="radio" name="size" value="S" required><span>S</span></div>
+                        <div><input type="radio" name="size" value="M" required><span>M</span></div>
+                        <div><input type="radio" name="size" value="L" required><span>L</span></div>
+                        <div><input type="radio" name="size" value="XL" required><span>XL</span></div>
+                    </div>
+                </div>
+            </div>
+            <span class="valid_error" style="display: none">Форма не прошла проверку. Возможно, вы заполнили не все поля.</span>
+            <div class="nav_buttons">
+                <button type="button" class="prev" disabled>Назад</button>
+                <button type="button" class="next" disabled>Далее</button>
+                <button type="submit" class="submit" onclick="check()" disabled>Отправить</button>
+            </div>
+        </form>
+    </section>
+    <script src={% static 'schoolofleader/js/form.js' %}></script>
+</body>
+</html>

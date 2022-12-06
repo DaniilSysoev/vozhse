@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа Вожатых НИУ ВШЭ 2023</title>
+    <link rel="stylesheet" href="{% static 'schoolofleader/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'schoolofleader/css/fonts.css' %}">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <link rel="icon" href="{% static 'schoolofleader/img/logoicon.png' %}" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="logos">
+            <a href="#"><img src="{% static 'schoolofleader/icons/logo_sv.svg' %}" alt="Лого ШВ" class="logo"></a>
+            <a href="#"><img src="{% static 'schoolofleader/icons/logo_vd.svg' %}" alt="Лого ВД" class="logo"></a>
+        </div>
+        <div class="menu">
+            <ul class="menu__list">
+                <li class="menu__i"><a class="menu__a" href="#head_faq">FAQ</a></li>
+                <li class="menu__i"><a class="menu__a" href="#head_review">Отзывы</a></li>
+            </ul>
+            <a href="https://vk.com/vozhse"><img src="{% static 'schoolofleader/icons/vk.svg' %}" alt="Лого ВК" class="menu__logo"></a>
+        </div>
+    </header>
+
+    <section>
+        <div class=" promo">
+            <div class="promo__content">
+                <h1 class="title title_big">ШКОЛА</h1>
+                <h2 class="title title_big">ВОЖАТЫХ</h2>
+                <h2 class="title title_big title_big_red">НИУ ВШЭ</h2>
+                <p class="subtitle subtitle_promo">Проект для тех, кто хочет стать вожатым</p>
+                <a href="#head_format"><button class="promo__btn subtitle subtitle_btn_promo">Подробнее</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="about">
+            <h2 class="title title_about">О проекте</h2>
+            <p class="descr descr_about">Школа вожатых — это тематический образовательный проект<br>для студентов 4
+                кампусов НИУ ВШЭ, направленный<br>на получение профессиональных навыков, доступных<br>для применения в
+                образовательных центрах, лагерях<br>и базах с программами для одарённых детей</p>
+            <div class="about__numbers">
+                <div class="about__number_about">
+                    <h2 class="title title_number_green">144</h2>
+                    <div class="sep_green"></div>
+                    <h3 class="descr descr_num">часа учебных занятий</h3>
+                </div>
+                <div class="about__number_about">
+                    <h2 class="title title_number_green">180</h2>
+                    <div class="sep_green"></div>
+                    <h3 class="descr descr_num">отобранных участников ежегодно</h3>
+                </div>
+                <div class="about__number_about">
+                    <h2 class="title title_number_green">150</h2>
+                    <div class="sep_green"></div>
+                    <h3 class="descr descr_num">выпускников, получивших квалификацию</h3>
+                </div>
+                <div class="about__number_about">
+                    <h2 class="title title_number_green">30</h2>
+                    <div class="sep_green"></div>
+                    <h3 class="descr descr_num">опытных организаторов</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="org">
+            <h2 class="title title_org">Организатор проекта</h2>
+            <p class="descr descr_org">Студенческая организация<br><span>«Вышка — детям»</span>, развивающая вожатское сообщество в
+                стенах НИУ ВШЭ</p>
+            <img src="{% static 'schoolofleader/img/vd_star.png' %}" alt="Команда ВД" class="org__img">
+            <div class="about__numbers_org">
+                <div class="about__number_org">
+                    <h2 class="title title_number_red">20+</h2>
+                    <div class="sep_red"></div>
+                    <h3 class="descr descr_num descr_num_red">успешных<br>проектов</h3>
+                </div>
+                <div class="about__number_org">
+                    <h2 class="title title_number_red">10</h2>
+                    <div class="sep_red"></div>
+                    <h3 class="descr descr_num descr_num_red">онлайн-смен <br>для детей</h3>
+                </div>
+                <div class="about__number_org">
+                    <h2 class="title title_number_red">5к</h2>
+                    <div class="sep_red"></div>
+                    <h3 class="descr descr_num descr_num_red">участников<br>на проектах</h3>
+                </div>
+            </div>
+            <a href="https://vk.com/hse.forkids" class="org__logo"><img class="menu__logo" src="{% static 'schoolofleader/icons/vk.svg' %}"
+                    alt="Лого ВК"></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="format">
+            <h2 id="head_format" class="title title_format">Формат Школы вожатых</h2>
+            <div class="format__wrapper">
+                <div class="format__item">
+                    <img src="{% static 'schoolofleader/icons/format/el1.svg' %}" alt="Фигура" class="format__img">
+                    <h3 class="format__subtitle title_mini title">Система кураторства</h3>
+                    <p class="format__descr text">Кураторы групп — опытные вожатые,
+принимающие участие в практических занятиях;
+к ним можно обратиться за индивидуальной
+обратной связью, консультацией,
+лайфхаками из опыта работы</p>
+                </div>
+                <div class="format__item">
+                    <img src="{% static 'schoolofleader/icons/format/el2.svg' %}" alt="Фигура" class="format__img">
+                    <h3 class="format__subtitle title_mini title">Работа в группе</h3>
+                    <p class="format__descr text">Участники будут сформированы в группы единомышленников для
+                        развития
+                        soft-skills
+                        в процессе нетворкинга</p>
+                </div>
+                <div class="format__item format__item3">
+                    <img src="{% static 'schoolofleader/icons/format/el3.svg' %}" alt="Фигура" class="format__img">
+                    <h3 class="format__subtitle title_mini title">Персонализация<br>трека обучения</h3>
+                    <p class="format__descr text">С помощью факультативов участники могут адаптировать наполненность
+                        Школы<br>под собственные запросы</p>
+                </div>
+                <div class="format__item format__item4">
+                    <img src="{% static 'schoolofleader/icons/format/el4.svg' %}" alt="Фигура" class="format__img">
+                    <h3 class="format__subtitle_nogap title_mini title">Теория</h3>
+                    <h3 class="format__subtitle title_mini title">и практика</h3>
+                    <p class="format__descr text">Теоретическая база от опытных вожатых и практические задачи на
+                        основе
+                        реальных кейсов</p>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1BxFiZu1OBHoj3aAA6CJhe2pZEO9AiIT5/view?usp=share_link">
+                <h3 class="subtitle subtitle_topics">Расписание занятий</h3>
+            </a>
+            <a href="/form"><button class="format__btn subtitle subtitle_btn_format">Регистрация</button></a>
+        </div>
+    </section>
+
+    <section>
+        <div class="review">
+            <h2 id="head_review" class="title title_review">Отзывы участников</h2>
+            <div class="review__wrapper">
+                <div class="review__item">
+                    <img src="{% static 'schoolofleader/img/review/rev1.png' %}" alt="Паша Лукин" class="review__img">
+                    <h2 class="review__name title title_name">Паша Лукин</h2>
+                    <h3 class="subtitle subtitle_name">участник 2 сезона, организатор<br>3 сезона Школы вожатых</h3>
+                    <p class="text text_rev">На Школе вожатых не просто дают навыки
+для работы, но и прививают любовь к детям
+и желание отдавать свою энергию.
+Большой банк игр, взаимопонимание,
+а также умение решать конфликты
+и ставить номера — всё это я получил
+на Школе вожатых и смог применить в работе.
+Проект настолько меня зарядил, что этим летом
+я поехал не только вожатым,
+но и педагогом-организатором.</p>
+                </div>
+                <div class="review__item">
+                    <img src="{% static 'schoolofleader/img/review/rev2.png' %}" alt="Лиза Рудич" class="review__img">
+                    <h2 class="review__name title title_name">Лиза Рудич</h2>
+                    <h3 class="subtitle subtitle_name_small">участник 2 сезона<br>Школы вожатых</h3>
+                    <p class="text text_rev">Подавала заявку больше из-за желания просто заняться чем-то активным.
+Нашла не только отличное комьюнити,
+но и прониклась к вожатству
+как к наставничеству и созданию
+разнообразного досуга для детей.
+Это дало толчок к развитию —
+до этого был довольно сложный
+эмоционально период. После Школы
+я работала в летней школе от Вышки,
+ЛМШ2022, и прониклась к работе вожатого ещё больше.
+Всё, что было пройдено в теории,
+нашло своё применение и на практике!
+А с ребятами из Школы вожатых
+я до сих пор поддерживаю связь.
+Периодически вижу анонсы проектов
+«Вышка — детям» и не могу сдержать порыв поучаствовать.</p>
+                </div>
+                <div class="review__item">
+                    <img src="{% static 'schoolofleader/img/review/rev3.png' %}" alt="Надя Филатова" class="review__img">
+                    <h2 class="review__name title title_name">Надя Филатова</h2>
+                    <h3 class="subtitle subtitle_name">участник 1 сезона, организатор<br>2 и 3 сезонов Школы вожатых
+                    </h3>
+                    <p class="text text_rev">Школа вожатых — это место, в котором исполняются мечты, место с
+                        невероятной
+                        энергетикой и творческими заряженными людьми. После дистанционного режима и небольшой апатии
+                        это
+                        было спасением от учебных будней, грустных мыслей и безделья. Я с нетерпением ждала занятия,
+                        потому что знала, что эти три часа будут наполнены полезными знаниями, смехом и улыбками
+                        ребят
+                        из моей команды. Это мой первый шаг во внеучебной жизни Вышки. Сейчас я участвую во многих
+                        проектах, и, наверное, такой запал подарила мне Школа вожатых.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="camps">
+            <h2 class="title title_camps">Где работают выпускники?</h2>
+            <div class="camps__wrapper">
+                <div class="camps__item">
+                    <img src="{% static 'schoolofleader/img/camps/camp1.png' %}" alt="Лагерь лого" class="camps__img uris">
+                    <a href="https://olymp.hse.ru/" class="descr descr_site">Сайт</a>
+                </div>
+                <div class="camps__item">
+                    <img src="{% static 'schoolofleader/img/camps/camp2.png' %}" alt="Лагерь лого" class="camps__img orl">
+                    <a href="https://center-orlyonok.ru/" class="descr descr_site">Сайт</a>
+                </div>
+                <div class="camps__item">
+                    <img src="{% static 'schoolofleader/img/camps/camp3.png' %}" alt="Лагерь лого" class="camps__img mos">
+                    <a href="https://mosgortur.ru/?ysclid=lbb78nnt6546469161" class="descr descr_site">Сайт</a>
+                </div>
+                <div class="camps__item">
+                    <img src="{% static 'schoolofleader/img/camps/camp4.png' %}" alt="Лагерь лого" class="camps__img soft">
+                    <a href="https://vk.com/softskillscamp" class="descr descr_site">Сайт</a>
+                </div>
+                <div class="camps__item">
+                    <img src="{% static 'schoolofleader/img/camps/camp5.png' %}" alt="Лагерь лого" class="camps__img euro">
+                    <a href="https://www.euroclubs.ru/" class="descr descr_site">Сайт</a>
+                </div>
+                <div class="camps__item">
+                    <img src="{% static 'schoolofleader/img/camps/camp6.png' %}" alt="Лагерь лого" class="camps__img lesh">
+                    <a href="https://lesh.info/" class="descr descr_site">Сайт</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="faq">
+            <h2 id="head_faq" class="title title_faq">FAQ</h2>
+            <div class="faq__wrapper">
+                <div class="faq__item">
+                    <h3 class="descr descr_faq">Платное ли обучение?</h3>
+                    <img src="{% static 'schoolofleader/icons/triangle.svg' %}" alt="Треугольник" class="faq__icon">
+                    <div class="faq__opening close">
+                        <h3 class="descr descr_faq">Нет, обучение абсолютно бесплатно</h3>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <h3 class="descr descr_faq">Лекции очно или онлайн?</h3>
+                    <img src="{% static 'schoolofleader/icons/triangle.svg' %}" alt="Треугольник" class="faq__icon">
+                    <div class="faq__opening close">
+                        <h3 class="descr descr_faq">Лекции проходят очно, а для кампусов будут<br>онлайн-трансляции, также после лекций будут выкладываться записи</h3>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <h3 class="descr descr_faq">Помогут ли в трудоустройстве?</h3>
+                    <img src="{% static 'schoolofleader/icons/triangle.svg' %}" alt="Треугольник" class="faq__icon">
+                    <div class="faq__opening close">
+                        <h3 class="descr descr_faq">Да, мы составляем базу лагерей и образовательных центров, куда могут поехать выпускники Школы вожатых</h3>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <h3 class="descr descr_faq">Будет ли подтверждение о пройденном обучении?</h3>
+                    <img src="{% static 'schoolofleader/icons/triangle.svg' %}" alt="Треугольник" class="faq__icon">
+                    <div class="faq__opening close">
+                        <h3 class="descr descr_faq">Да, выпускникам, успешно прошедшим обучение, выдаются сертификаты государственного образца РСО
+                        </h3>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <h3 class="descr descr_faq">Мне нет 18. Могу ли я пройти Школу вожатых?</h3>
+                    <img src="{% static 'schoolofleader/icons/triangle.svg' %}" alt="Треугольник" class="faq__icon">
+                    <div class="faq__opening close">
+                        <h3 class="descr descr_faq">Да, если на момент окончания Школы вожатых, конец марта, исполнится 18 лет</h3>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <h3 class="descr descr_faq">Можно ли пройти Школу иностранным студентам?</h3>
+                    <img src="{% static 'schoolofleader/icons/triangle.svg' %}" alt="Треугольник" class="faq__icon">
+                    <div class="faq__opening close">
+                        <h3 class="descr descr_faq">Нет, так как будут проблемы с трудоустройством</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bottom">
+            <h2 class="title title_bottom">Стань частью Школы вожатых НИУ ВШЭ</h2>
+            <h3 class="subtitle subtitle_bottom">Заполни заявку прямо сейчас!</h3>
+            <a href="/form"><button class="bottom__btn subtitle subtitle_btn_bottom">Регистрация</button></a>
+        </div>
+    </section>
+    <script src={% static 'schoolofleader/js/index.js' %}></script>
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script> -->
+</body>
+
+</html>

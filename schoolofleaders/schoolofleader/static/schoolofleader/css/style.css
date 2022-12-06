@@ -1,0 +1,2358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.title {
+    font-family: 'Gilroy';
+    font-weight: 900;
+    font-style: normal;
+    font-size: 85px;
+    color: #FFF2E0;
+}
+
+.title_big {
+    font-size: 135px;
+    color: #FED763;
+    margin-bottom: -35px;
+}
+
+.title_big_red {
+    color: #F98D89;
+}
+
+.title_number_green {
+    font-size: 135px;
+    text-align: center;
+    color: #A8AFFE;
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: #008264;
+}
+
+.title_number_red {
+    font-size: 135px;
+    color: #008264;
+    text-align: center;
+    -webkit-text-stroke-width: 8px;
+    -webkit-text-stroke-color: #F98D89;
+    ;
+}
+
+.title_mini {
+    font-size: 50px;
+    color: #303030;
+}
+
+.title_name {
+    font-size: 40px;
+    color: #008264;
+    text-align: center;
+}
+
+.title_bottom {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #FFF2E0;
+}
+
+.subtitle_topics {
+    font-size: 50px;
+    text-decoration-line: underline;
+    color: #303030;
+}
+
+.subtitle_btn_promo {
+    font-size: 45px;
+    color: #A8AFFE;
+}
+
+.subtitle_btn_format {
+    font-size: 70px;
+    color: #008264;
+}
+
+.subtitle_name_small {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.subtitle_name {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.subtitle_btn_bottom {
+    font-size: 55px;
+}
+
+.subtitle_bottom {
+    font-size: 30px;
+}
+
+.descr {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 59px;
+    color: #FFF2E0;
+}
+
+.descr_num {
+    font-size: 30px;
+    color: #008264;
+    text-align: center;
+    line-height: 35px;
+}
+
+.descr_num_red {
+    color: #F98D89;
+}
+
+.descr_site {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.descr_faq {
+    font-size: 45px;
+    color: #303030;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.text_rev {
+    /* text-align: center; */
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFF2E0;
+}
+
+.text_faq {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.sep_green {
+    width: 200px;
+    border-top: 5px solid #008264;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.sep_red {
+    width: 200px;
+    border-top: 5px solid #F98D89;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 100px;
+    background: #FFF2E0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.logo {
+    margin-right: 66px;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list {
+    display: inline-block;
+    margin-right: 123px;
+}
+
+.menu__i {
+    display: inline-block;
+    margin-left: 84px;
+}
+
+.menu__a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #303030;
+}
+
+.menu__logo {
+    width: 60px;
+}
+
+.promo {
+    margin-top: 100px;
+    height: 774px;
+    background: url(../img/bg_promo.png) top -120px left -29px no-repeat, url(../img/black.png)
+}
+
+.promo__content {
+    max-width: 772px;
+    margin-left: 820px;
+}
+
+.promo__btn {
+    cursor: pointer;
+    width: 300px;
+    height: 80px;
+    border: 5px solid #A8AFFE;
+    border-radius: 15px;
+    background: black;
+}
+
+.subtitle_promo {
+    width: 501px;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+.about {
+    padding: 60px 128px 75px 150px;
+    background: #A8AFFE;
+}
+
+.descr_about {
+    margin: 43px 0 63px 0;
+}
+
+.about__numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__number_about {
+    width: 250px;
+}
+
+.org {
+    background: #008264;
+    padding: 68px 0 93px 150px;
+    position: relative;
+}
+
+.descr_org {
+    margin: 49px 0 67px 0;
+    width: 730px;
+}
+
+.about__number_org {
+    max-width: 288px
+}
+
+.org__img {
+    position: absolute;
+    top: 157px;
+    right: 66px;
+    width: 540px;
+    /* border: 5px solid #FED763; */
+}
+
+.org__logo {
+    position: absolute;
+    bottom: 56px;
+    right: 76px;
+}
+
+.about__numbers_org {
+    width: 988px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.format {
+    background: #FFF2E1;
+    padding: 67px 250px 83px 250px;
+}
+
+.title_format {
+    color: #303030;
+    text-align: center;
+    margin-bottom: 95px;
+}
+
+.format__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.format__item {
+    width: 550px;
+    height: 715px;
+    margin-bottom: 25px;
+}
+
+.format__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.format__subtitle {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.format__subtitle_nogap {
+    text-align: center;
+}
+
+.format__btn {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 105px;
+    width: 500px;
+    height: 100px;
+    border: 8px solid #008264;
+    background: #FFF2E0;
+    border-radius: 20px;
+}
+
+.review {
+    background: #F98D89;
+    padding: 39px 50px 87px 50px;
+}
+
+.title_review {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.review__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__item {
+    padding: 56px 44px 0px 44px;
+    width: 494px;
+    height: 800px;
+    border: 6px solid #FFF2E0;
+    border-radius: 60px;
+}
+
+.review__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+.review__name {
+    margin-bottom: 10px;
+}
+
+.camps {
+    padding: 51px 173px 76px 173px;
+    background: #A8AFFE;
+}
+
+.title_camps {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.camps__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.camps__item {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: #FFF2E0;
+    border: 10px solid #008264;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    padding-top: 36px;
+}
+
+.camps__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.uris,
+.mos {
+    margin-top: 40px;
+}
+
+.orl {
+    margin-top: -40px;
+    height: 250px;
+}
+
+.faq {
+    padding: 44px 165px 78px 165px;
+    background: #008264;
+}
+
+.title_faq {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.faq__item {
+    position: relative;
+    width: 1400px;
+    background: #FFF2E0;
+    border-radius: 20px;
+    margin-bottom: 53px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.faq__opening {
+    margin-top: 30px;
+}
+
+.faq__icon {
+    position: absolute;
+    right: 34px;
+    top: 37px;
+    transition: 0.2s;
+}
+
+.bottom {
+    padding: 72px 65px 68px 100px;
+    background: #F98D89;
+    position: relative;
+}
+
+.bottom__btn {
+    cursor: pointer;
+    width: 400px;
+    height: 80px;
+    background: #F98D89;
+    border: 8px solid #FFF2E0;
+    border-radius: 20px;
+    position: absolute;
+    right: 65px;
+    bottom: 84px;
+}
+
+span {
+    font-weight: 1000;
+    font-size: 46px;
+}
+
+@media (max-width: 1640px) {
+    .review__item {
+        padding: 20px 25px 0px 25px;
+        width: 434px;
+        height: 700px;
+    }
+
+    .subtitle_name {
+        width: 330px;
+    }
+
+    .title_big {
+        font-size: 135px;
+    }
+
+    .format {
+        padding: 77px 150px 83px 150px;
+    }
+
+    .title_format {
+        margin-bottom: 75px;
+    }
+
+    .org__img {
+        width: 520px;
+        right: 76px;
+    }
+
+    .about__numbers_org {
+        width: 888px;
+    }
+
+    .bottom__btn {
+        width: 330px;
+    }
+
+    .subtitle_btn_bottom {
+        font-size: 45px;
+    }
+
+    .faq__item {
+        padding-left: 22px;
+    }
+    .faq__opening {
+        margin-top: 30px;
+    }
+
+    .descr_faq {
+        font-size: 37px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1510px) {
+    .title {
+        font-size: 65px;
+    }
+
+    .title_big {
+        font-size: 110px;
+        margin-bottom: -25px;
+    }
+
+    .subtitle {
+        font-size: 35px;
+    }
+
+    .subtitle_btn_promo {
+        font-size: 37px;
+    }
+
+    .promo {
+        padding-top: 15px;
+    }
+
+    .title_number_green {
+        font-size: 90px;
+        -webkit-text-stroke-width: 6px;
+    }
+
+    .title_number_red {
+        font-size: 90px;
+        -webkit-text-stroke-width: 6px;
+    }
+
+    .title_mini {
+        font-size: 35px;
+    }
+
+    .subtitle_btn_format {
+        font-size: 40px;
+    }
+
+    .about {
+        padding: 30px 120px 65px 120px;
+    }
+
+    .descr_about {
+        font-size: 33px;
+        margin: 18px 0 33px 0;
+    }
+
+    .org {
+        padding: 42px 0 60px 120px;
+    }
+
+    .descr_org {
+        margin: 29px 0 57px 0;
+        font-size: 33px;
+    }
+
+    .org__img {
+        width: 350px;
+        top: 137px;
+        right: 126px;
+    }
+
+    .format {
+        padding: 27px 150px 63px 150px;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+    .format__item {
+        width: 550px;
+        height: 515px;
+        margin-bottom: 25px;
+    }
+
+    .format__img {
+        width: 200px;
+    }
+
+    .format__btn {
+        margin-top: 75px;
+        width: 330px;
+        height: 80px;
+        border: 6px solid #008264;
+    }
+
+    .camps {
+        padding: 21px 120px 82px 120px;
+        background: #A8AFFE;
+    }
+
+    .title_camps {
+        text-align: center;
+        margin-bottom: 65px;
+    }
+
+    .camps__item {
+        width: 340px;
+        height: 340px;
+        border: 8px solid #008264;
+        padding-top: 26px;
+    }
+
+    .orl {
+        margin-top: -20px;
+        height: 230px;
+    }
+
+    .title_name {
+        font-size: 30px;
+    }
+
+    .subtitle_name {
+        font-size: 15px;
+    }
+
+    .subtitle_name_small {
+        font-size: 15px;
+    }
+
+    .title_bottom {
+        font-size: 45px;
+    }
+
+    .text_rev {
+        /* text-align: center; */
+        font-size: 15px;
+    }
+
+    .faq {
+        padding: 24px 165px 58px 165px;
+    }
+
+    .title_faq {
+        margin-bottom: 40px;
+    }
+
+    .bottom {
+        padding: 32px 65px 28px 100px;
+        background: #F98D89;
+        position: relative;
+    }
+
+    .bottom__btn {
+        width: 300px;
+        height: 70px;
+        border: 6px solid #FFF2E0;
+        right: 65px;
+        bottom: 44px;
+    }
+
+    span {
+        font-size: 35px;
+    }
+
+    @media (max-width: 1440px) {
+        .promo__content {
+            margin-left: 680px;
+        }
+
+        .format__item {
+            width: 450px;
+            height: 515px;
+            margin-bottom: 45px;
+        }
+
+        .title_format {
+            margin-bottom: 45px;
+        }
+
+        .format__img {
+            margin-bottom: 26px;
+        }
+
+        .format__subtitle {
+            margin-bottom: 13px;
+        }
+
+        .review {
+            padding: 39px 150px 87px 150px;
+        }
+
+        .review__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .review__item {
+            padding: 26px 44px 0px 44px;
+            width: 604px;
+            height: 600px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle_name {
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 1360px) {
+        .about__numbers_org {
+            width: 688px;
+        }
+
+        .descr_faq {
+            font-size: 30px;
+        }
+
+        .title_bottom {
+            font-size: 35px;
+        }
+
+        .subtitle_bottom {
+            font-size: 25px;
+        }
+
+        .org__img {
+            width: 350px;
+            top: 137px;
+            right: 86px;
+        }
+
+        .camps__item {
+            width: 300px;
+            height: 300px;
+        }
+
+        .uris,
+        .mos {
+            width: 250px;
+            margin-top: 30px;
+        }
+
+        .orl {
+            margin-top: -20px;
+            height: 200px;
+        }
+
+        .soft,
+        .euro {
+            height: 180px;
+        }
+
+        .lesh {
+            width: 220px;
+        }
+
+        .descr_site {
+            bottom: 25px;
+            font-size: 30px;
+        }
+
+        .title_camps {
+            margin-bottom: 45px;
+        }
+    }
+
+    @media (max-width: 1235px) {
+        .title {
+            font-size: 50px;
+        }
+
+        .descr {
+            font-size: 25px;
+            line-height: 49px;
+        }
+
+        header {
+            height: 80px;
+            padding: 10px 30px;
+        }
+
+        .menu__a {
+            font-size: 25px;
+        }
+
+        .promo {
+            margin-top: 80px;
+            height: 534px;
+            background: url(../img/bg_promo_s.png) top -80px left -40px no-repeat, url(../img/black.png)
+        }
+
+        .promo__content {
+            margin-left: 600px;
+        }
+
+        .title_big {
+            font-size: 90px;
+            margin-bottom: -25px;
+        }
+
+        .title_number_green {
+            font-size: 80px;
+            -webkit-text-stroke-width: 5px;
+        }
+
+        .title_number_red {
+            font-size: 80px;
+            -webkit-text-stroke-width: 5px;
+        }
+
+        .subtitle_promo {
+            width: 421px;
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+
+        .promo__btn {
+            width: 200px;
+            height: 60px;
+            border: 3px solid #A8AFFE;
+        }
+
+        .subtitle_btn_promo {
+            font-size: 30px;
+        }
+
+        .about {
+            padding: 20px 150px 45px 120px;
+        }
+
+        .descr_about {
+            margin: 8px 0 23px 0;
+        }
+
+        .descr_num {
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        .org {
+            padding: 22px 0 45px 120px;
+        }
+
+        .descr_org {
+            margin: 19px 0 47px 0;
+            max-width: 550px;
+        }
+
+        .org__img {
+            width: 270px;
+            top: 77px;
+            right: 126px;
+        }
+
+        .format {
+            padding: 17px 150px 43px 150px;
+        }
+
+        .title_mini {
+            font-size: 30px;
+        }
+
+        .text {
+            font-size: 20px;
+        }
+
+        .format__item {
+            width: 400px;
+            height: 455px;
+        }
+
+        .format__img {
+            width: 150px;
+        }
+
+        .format__btn {
+            margin-top: 75px;
+            width: 250px;
+            height: 60px;
+            border: 4px solid #008264;
+        }
+
+        .subtitle_topics {
+            margin-top: -30px;
+            font-size: 30px;
+        }
+
+        .subtitle_btn_format {
+            font-size: 30px;
+        }
+
+        .review {
+            padding: 29px 150px 57px 150px;
+        }
+
+        .title_review {
+            margin-bottom: 30px;
+        }
+
+        .review__item {
+            padding: 24px 24px 0px 24px;
+            width: 474px;
+            height: 520px;
+            margin-bottom: 20px;
+        }
+
+        .text_rev {
+            font-size: 12px;
+        }
+
+        .review__img {
+            width: 150px;
+        }
+
+        .title_name {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .camps__item {
+            width: 270px;
+            height: 270px;
+        }
+
+        .orl {
+            margin-top: -10px;
+            height: 170px;
+        }
+
+        .uris,
+        .mos {
+            width: 220px;
+            margin-top: 30px;
+        }
+
+        .soft,
+        .euro {
+            height: 160px;
+        }
+
+        .lesh {
+            width: 190px;
+        }
+
+        .faq__item {
+            margin-bottom: 33px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .faq__opening {
+            margin-top: 25px;
+        }
+
+        .faq__icon {
+            position: absolute;
+            right: 24px;
+            top: 30px;
+            width: 50px;
+            transition: 0.2s;
+        }
+
+        .title_bottom {
+            font-size: 30px;
+        }
+
+        .subtitle_bottom {
+            font-size: 22px;
+        }
+
+        .subtitle_btn_bottom {
+            font-size: 27px;
+        }
+
+        .bottom__btn {
+            width: 220px;
+            height: 55px;
+            border: 4px solid #FFF2E0;
+            right: 65px;
+            bottom: 44px;
+        }
+
+        .sep_green {
+            width: 150px;
+            border-top: 4px solid #008264;
+        }
+
+        .sep_red {
+            width: 150px;
+            border-top: 4px solid #F98D89;
+        }
+
+        span {
+            font-size: 28px;
+        }
+    }
+
+
+    @media (max-width: 1100px) {
+        .title_big {
+            font-size: 80px;
+        }
+
+        .subtitle_promo {
+            font-size: 28px;
+        }
+
+        .promo__content {
+            margin-left: 590px;
+        }
+
+        .about__numbers_org {
+            width: 588px;
+        }
+
+        .format__wrapper {
+            justify-content: center;
+        }
+
+        .format__descr {
+            text-align: center;
+        }
+
+        .format__item {
+            width: 580px;
+            max-height: 355px;
+        }
+
+        .format__item3 {
+            margin-top: -40px;
+        }
+
+        .format__img {
+            width: 130px;
+        }
+
+        .camps__item {
+            padding-top: 20px;
+            width: 240px;
+            height: 240px;
+        }
+
+        .orl {
+            margin-top: -10px;
+            height: 140px;
+        }
+
+        .uris,
+        .mos {
+            width: 190px;
+            margin-top: 20px;
+        }
+
+        .uris {
+            margin-top: 30px;
+        }
+
+        .soft,
+        .euro {
+            height: 140px;
+        }
+
+        .lesh {
+            width: 170px;
+        }
+
+        .org__img {
+            width: 240px;
+            top: 97px;
+            right: 96px;
+        }
+
+        .descr_faq {
+            font-size: 20px;
+        }
+
+        .subtitle_topics {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 1012px) {
+        .menu__list {
+            margin-right: 63px;
+        }
+
+        .menu__i {
+            margin-left: 44px;
+        }
+
+        .title {
+            font-size: 40px;
+        }
+
+        .descr {
+            font-size: 20px;
+            line-height: 39px;
+        }
+
+        .title_number_green {
+            font-size: 65px;
+            -webkit-text-stroke-width: 3px;
+        }
+
+        .title_number_red {
+            font-size: 65px;
+            -webkit-text-stroke-width: 3px;
+        }
+
+        header {
+            height: 60px;
+            padding: 7px 20px;
+        }
+
+        .menu__a {
+            font-size: 18px;
+        }
+
+        .menu__logo {
+            width: 45px;
+        }
+
+        .promo {
+            margin-top: 60px;
+            max-height: 534px;
+        }
+
+        .promo__content {
+            margin-left: 480px;
+        }
+
+        .title_big {
+            font-size: 65px;
+        }
+
+        .subtitle_promo {
+            width: 300px;
+            font-size: 23px;
+        }
+
+        .promo__btn {
+            width: 160px;
+            height: 50px;
+        }
+
+        .subtitle_btn_promo {
+            font-size: 23px;
+        }
+
+        .descr_num {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        .about__numbers {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .about__number_about {
+            width: 240px;
+        }
+
+        .org__logo {
+            position: absolute;
+            bottom: 6px;
+            right: 26px;
+        }
+
+        .org__img {
+            display: none;
+        }
+
+        .descr_org {
+            margin: 19px 0 27px 0;
+        }
+
+        .sep_red {
+            max-width: 120px;
+        }
+
+        .about__numbers_org {
+            margin-left: -30px;
+            max-width: 728px;
+        }
+
+        .title_mini {
+            font-size: 30px;
+        }
+
+        .text {
+            font-size: 20px;
+        }
+
+        .subtitle_topics {
+            margin-top: 0px;
+            font-size: 25px;
+        }
+
+        .text_rev {
+            font-size: 12px;
+        }
+
+        .title_name {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .faq__item {
+            margin-bottom: 33px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .faq__opening {
+            margin-top: 20px;
+        }
+
+        .faq__icon {
+            right: 20px;
+            top: 25px;
+            width: 35px;
+            transition: 0.2s;
+        }
+
+        .camps__item {
+            width: 210px;
+            height: 210px;
+        }
+
+        .uris,
+        .mos {
+            width: 170px;
+            margin-top: 20px;
+        }
+
+        .uris {
+            margin-top: 30px;
+        }
+
+        .soft,
+        .euro {
+            height: 120px;
+        }
+
+        .lesh {
+            width: 150px;
+        }
+
+        .orl {
+            margin-top: -10px;
+            height: 140px;
+        }
+
+        .title_bottom {
+            font-size: 24px;
+        }
+
+        .subtitle_bottom {
+            font-size: 18px;
+        }
+
+        .subtitle_btn_bottom {
+            font-size: 22px;
+        }
+
+        .bottom__btn {
+            width: 190px;
+            height: 45px;
+            border: 3px solid #FFF2E0;
+            right: 25px;
+            bottom: 38px;
+        }
+
+        .faq {
+            padding: 24px 115px 58px 115px;
+        }
+
+        .descr_site {
+            bottom: 10px;
+            font-size: 20px;
+        }
+
+        .camps {
+            padding: 21px 80px 46px 80px;
+        }
+
+        span {
+            font-size: 25px;
+        }
+    }
+
+    @media (max-width: 825px) {
+        .menu__list {
+            margin-right: 43px;
+        }
+
+        .menu__i {
+            margin-left: 24px;
+        }
+
+        .menu__logo {
+            width: 40px;
+        }
+
+        .logo {
+            margin-right: 36px;
+            height: 100%;
+        }
+
+        .promo__content {
+            margin-left: 430px;
+        }
+
+        .promo {
+            height: 484px;
+            background: url(../img/bg_promo_ss.png) top -120px left -40px no-repeat, url(../img/black.png)
+        }
+
+        .title_big {
+            font-size: 55px;
+        }
+
+        .subtitle_promo {
+            width: 260px;
+            font-size: 20px;
+        }
+
+        .promo__btn {
+            width: 140px;
+            height: 45px;
+        }
+
+        .subtitle_btn_promo {
+            font-size: 20px;
+        }
+
+        .about {
+            padding: 20px 98px 35px 80px;
+        }
+
+        .org {
+            padding: 20px 0px 35px 80px;
+        }
+
+        .format {
+            padding: 20px 80px 35px 80px;
+        }
+
+        .review {
+            padding: 20px 80px 35px 80px;
+        }
+
+        .camps {
+            padding: 20px 80px 35px 80px;
+        }
+
+        .camps__item {
+            width: 180px;
+            height: 180px;
+        }
+
+        .orl {
+            margin-top: -15px;
+            height: 120px;
+        }
+
+        .uris,
+        .mos {
+            width: 150px;
+            margin-top: 20px;
+        }
+
+        .uris {
+            margin-top: 30px;
+        }
+
+        .soft,
+        .euro {
+            height: 100px;
+        }
+
+        .lesh {
+            width: 130px;
+        }
+
+        .faq {
+            padding: 20px 80px 35px 80px;
+        }
+
+        .bottom {
+            padding: 20px 80px 15px 80px;
+        }
+
+        .subtitle_btn_bottom {
+            font-size: 18px;
+        }
+
+        .bottom__btn {
+            width: 140px;
+            height: 40px;
+            border: 3px solid #FFF2E0;
+            right: 25px;
+            bottom: 30px;
+        }
+
+        .faq__item {
+            padding-left: 14px;
+        }
+
+        .faq__opening {
+            margin-top: 20px;
+        }
+
+    }
+
+    @media (max-width: 720px) {
+        .descr {
+            font-size: 18px;
+            line-height: 29px;
+        }
+
+        .text {
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+        .promo {
+            background: url(../img/bg_promo_ipad1.png) top 88px left 0px no-repeat, url(../img/black.png)
+        }
+
+        .promo__content {
+            margin-left: 86px;
+        }
+
+        .title_big {
+            font-size: 55px;
+        }
+
+        .subtitle_promo {
+            margin-top: 20px;
+            width: 200px;
+            font-size: 15px;
+        }
+
+        .promo__btn {
+            position: absolute;
+            width: 160px;
+            height: 50px;
+            top: 230px;
+            right: 84px;
+        }
+
+        .subtitle_btn_promo {
+            font-size: 24px;
+        }
+
+        .about {
+            padding: 20px 68px 35px 70px;
+        }
+
+        .about__number_about {
+            width: 210px;
+        }
+
+        .org {
+            padding: 20px 0px 35px 70px;
+        }
+
+        .descr_org {
+            margin: 10px 0 17px 0;
+            max-width: 500px;
+        }
+
+        .about__numbers_org {
+            max-width: 530px;
+            margin-left: -10px;
+        }
+
+        .format__item {
+            width: 400px;
+            height: 305px;
+        }
+
+        .format__item3 {
+            margin-top: -40px;
+        }
+
+        .format__item4 {
+            margin-top: 0px;
+        }
+
+        .format__btn {
+            margin-top: 45px;
+            width: 200px;
+            height: 50px;
+            border: 3px solid #008264;
+        }
+
+        .subtitle_btn_format {
+            font-size: 25px;
+        }
+
+        .subtitle_name {
+            margin-bottom: 4px;
+            font-size: 15px;
+        }
+
+        .text_rev {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .title_name {
+            margin-bottom: 4px;
+            font-size: 25px;
+        }
+
+        .camps__item {
+            width: 200px;
+            height: 200px;
+        }
+
+        .orl {
+            margin-top: -15px;
+            height: 140px;
+        }
+
+        .uris,
+        .mos {
+            width: 160px;
+            margin-top: 20px;
+        }
+
+        .uris {
+            margin-top: 30px;
+        }
+
+        .soft,
+        .euro {
+            height: 120px;
+        }
+
+        .lesh {
+            width: 150px;
+        }
+
+        .title_faq {
+            margin-bottom: 25px;
+        }
+
+        .descr_faq {
+            font-size: 16px;
+        }
+
+        .faq {
+            padding: 20px 56px 35px 56px;
+        }
+
+        .faq__item {
+            margin-bottom: 33px;
+            padding-top: 10px;
+            padding-top: 10px;
+        }
+
+        .faq__opening {
+            margin-top: 15px;
+        }
+
+        .faq__icon {
+            right: 17px;
+            top: 20px;
+            width: 30px;
+            transition: 0.2s;
+        }
+
+        .bottom {
+            padding: 20px 40px 15px 40px;
+        }
+
+        .title_bottom {
+            font-size: 18px;
+        }
+
+        .subtitle_bottom {
+            font-size: 16px;
+        }
+
+        .bottom__btn {
+            right: 25px;
+            bottom: 20px;
+        }
+
+        span {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .about__numbers_org {
+            max-width: 430px;
+            margin-left: -10px;
+        }
+
+        .promo__btn {
+            width: 140px;
+            height: 40px;
+            top: 230px;
+            right: 34px;
+        }
+
+        .subtitle_btn_promo {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 578px) {
+        .title {
+            font-size: 50px;
+        }
+
+        .descr {
+            font-size: 21px;
+            line-height: 25px;
+        }
+
+        .promo {
+            position: relative;
+            min-height: 776px;
+            background: url(../img/bg_promo_mobile.png) no-repeat, url(../img/black.png)
+        }
+
+        .promo__content {
+            margin-left: 68px;
+        }
+
+        .title_big {
+            font-size: 70px;
+        }
+
+        .subtitle_promo {
+            width: 280px;
+            font-size: 22px;
+        }
+
+        .promo__btn {
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            top: 300px;
+            right: 60px;
+        }
+
+        .subtitle_btn_promo {
+            font-size: 30px;
+        }
+
+        .about {
+            padding: 45px 40px 45px 44px;
+        }
+
+        .title_about {
+            text-align: center;
+        }
+
+        .descr_about {
+            margin: 22px 0 43px 0;
+        }
+
+        .descr_num {
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        .about__number_about {
+            margin-bottom: 15px;
+        }
+
+        .org {
+            padding: 45px 41px 109px 41px;
+        }
+
+        .title_org {
+            text-align: center;
+        }
+
+        .descr_org {
+            margin-top: 26px;
+            width: 400px;
+        }
+
+        .about__numbers_org {
+            max-width: 388px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .about__number_org {
+            margin-bottom: 15px;
+        }
+
+        .descr_num_red {
+            width: 158px;
+        }
+
+        .org__img {
+            width: 190px;
+            display: block;
+            right: 96px;
+            top: 430px;
+        }
+
+        .org__logo {
+            left: 38px;
+            bottom: 25px;
+        }
+
+        .title_mini {
+            font-size: 30px;
+        }
+
+        .camps__item {
+            width: 160px;
+            height: 160px;
+        }
+
+        .orl {
+            margin-top: -18px;
+            height: 110px;
+        }
+
+        .uris,
+        .mos {
+            width: 110px;
+            margin-top: 20px;
+        }
+
+        .soft,
+        .euro {
+            height: 80px;
+        }
+
+        .lesh {
+            width: 100px;
+        }
+
+        .title_name {
+            font-size: 30px;
+        }
+
+        .descr_faq {
+            font-size: 16px;
+        }
+
+        .title_bottom {
+            font-size: 18px;
+        }
+
+        .bottom {
+            padding: 20px 30px 15px 30px;
+        }
+
+        .bottom__btn {
+            right: 23px;
+            bottom: 25px;
+            width: 120px;
+            height: 35px;
+            border: 3px solid #FFF2E0;
+        }
+
+        .subtitle_btn_bottom {
+            font-size: 16px;
+        }
+
+        .review {
+            padding: 20px 60px 35px 60px;
+        }
+
+        .faq {
+            padding: 20px 36px 35px 36px;
+        }
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    @media (max-width: 530px) {
+        .title {
+            font-size: 40px;
+        }
+
+        .descr {
+            font-size: 19px;
+            line-height: 25px;
+        }
+
+        .title_big {
+            font-size: 60px;
+        }
+
+        header {
+            height: 50px;
+            padding: 5px 10px;
+        }
+
+        .menu__list {
+            margin-right: 23px;
+        }
+
+        .menu__i {
+            margin-left: 14px;
+        }
+
+        .menu__logo {
+            width: 35px;
+        }
+
+        .logo {
+            margin-right: 26px;
+            height: 100%;
+        }
+
+        .promo {
+            margin-top: 50px;
+            min-height: 716px;
+            background: url(../img/bg_promo_mobile.png) top -60px left -10px no-repeat, url(../img/black.png);
+        }
+
+        .subtitle_promo {
+            width: 260px;
+            font-size: 20px;
+        }
+
+        .promo__btn {
+            position: absolute;
+            width: 160px;
+            height: 44px;
+            top: 260px;
+            right: 60px;
+        }
+
+        .subtitle_btn_promo {
+            font-size: 22px;
+        }
+
+        .about {
+            padding: 25px 35px 35px 35px;
+        }
+
+        .descr_about {
+            margin: 15px 0 43px 0;
+        }
+
+        .descr_num {
+            font-size: 16px;
+            line-height: 17px;
+        }
+
+        .about__number_about {
+            margin-bottom: 15px;
+            width: 180px;
+        }
+
+        .about__numbers_org {
+            margin-left: 0;
+            max-width: 368px;
+        }
+
+        .about__number_org {
+            max-width: 168px;
+        }
+
+        .title_org {
+            width: 400px;
+        }
+
+        .org__img {
+            width: 170px;
+            display: block;
+            right: 46px;
+            top: 360px;
+        }
+
+        .title_mini {
+            font-size: 30px;
+        }
+
+        .org {
+            padding: 25px 25px 85px 35px;
+        }
+
+        .format {
+            padding: 25px 25px 85px 25px;
+        }
+
+        .format__item {
+            width: 400px;
+            height: 325px;
+        }
+
+        .format__item3 {
+            margin-top: -60px;
+        }
+
+        .format__item4 {
+            margin-top: -20px;
+        }
+
+        .review {
+            padding: 25px 30px 55px 30px;
+        }
+
+        .review__item {
+            padding: 16px 20px 0px 20px;
+            width: 100%;
+            height: 520px;
+            margin-bottom: 20px;
+        }
+
+        .title_name {
+            font-size: 30px;
+        }
+
+        .camps__item {
+            padding-top: 15px;
+            width: 137px;
+            height: 137px;
+            border: 4px solid #008264;
+        }
+
+        .orl {
+            margin-top: -12px;
+            height: 90px;
+        }
+
+        .uris,
+        .mos {
+            width: 110px;
+            margin-top: 15px;
+        }
+
+        .soft,
+        .euro {
+            height: 70px;
+        }
+
+        .lesh {
+            width: 100px;
+        }
+
+        .descr_faq {
+            font-size: 13px;
+        }
+
+        .faq__icon {
+            right: 15px;
+            top: 17px;
+            width: 25px;
+            transition: 0.2s;
+        }
+
+        .faq__item {
+            margin-bottom: 23px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .faq__opening {
+            margin-top: 10px;
+        }
+
+        .title_bottom {
+            width: 320px;
+            font-size: 15px;
+            margin-bottom: 0px;
+        }
+
+        .subtitle_bottom {
+            display: none;
+            font-size: 16px;
+        }
+
+        .bottom {
+            padding: 20px 0px 25px 17px;
+        }
+
+        .bottom__btn {
+            right: 18px;
+            bottom: 18px;
+            width: 105px;
+            height: 32px;
+        }
+
+        .subtitle_btn_bottom {
+            font-size: 14px;
+        }
+
+        span {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 445px) {
+        .title {
+            font-size: 33px;
+        }
+
+        .descr {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        .title_big {
+            font-size: 53px;
+        }
+
+        .promo__content {
+            margin-left: 48px;
+        }
+
+        .promo {
+            margin-top: 50px;
+            min-height: 696px;
+            background: url(../img/bg_promo_mobile.png) top -80px left -55px no-repeat, url(../img/black.png);
+        }
+
+        .subtitle_promo {
+            width: 260px;
+            font-size: 18px;
+        }
+
+        .promo__btn {
+            top: 240px;
+            right: 60px;
+        }
+
+        .about {
+            padding: 25px 25px 35px 25px;
+        }
+
+        .descr_about {
+            margin: 15px 0 43px 0;
+        }
+
+        .descr_num {
+            font-size: 16px;
+            line-height: 17px;
+        }
+
+        .about__number_about {
+            margin-bottom: 15px;
+            width: 150px;
+        }
+
+        .sep_green {
+            width: 100px;
+        }
+
+        .sep_red {
+            width: 100px;
+        }
+
+        .about__numbers_org {
+            margin-left: 0;
+            max-width: 328px;
+        }
+
+        .about__number_org {
+            max-width: 188px
+        }
+
+        .descr_org {
+            width: 300px;
+        }
+
+        .title_org {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        .org__img {
+            width: 140px;
+            display: block;
+            right: 16px;
+            top: 350px;
+        }
+
+        .title_mini {
+            font-size: 25px;
+        }
+
+        .org {
+            padding: 25px 25px 85px 35px;
+        }
+
+        .format {
+            padding: 25px 25px 65px 25px;
+        }
+
+        .text {
+            font-size: 14px;
+        }
+
+        .format__item {
+            width: 400px;
+            height: 325px;
+        }
+
+        .format__item3 {
+            margin-top: -60px;
+        }
+
+        .format__item4 {
+            margin-top: -20px;
+        }
+
+        .review {
+            padding: 25px 15px 35px 15px;
+        }
+
+        .review__item {
+            padding: 16px 20px 0px 20px;
+            width: 100%;
+            height: 520px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle_name {
+            width: 200px;
+            font-size: 13px;
+        }
+
+        .subtitle_name_small {
+            width: 200px;
+            font-size: 13px;
+        }
+
+        .review__img {
+            width: 120px;
+        }
+
+        .title_name {
+            font-size: 27px;
+        }
+
+        .text_rev {
+            font-size: 12px;
+        }
+
+        .camps {
+            padding: 25px 20px 35px 20px;
+        }
+
+        .descr_faq {
+            font-size: 10px;
+        }
+
+        .faq {
+            padding: 25px 25px 35px 25px;
+        }
+
+        .title_bottom {
+            font-size: 20px;
+            width: 170px;
+        }
+
+        .bottom {
+            padding: 20px 10px 25px 24px;
+        }
+
+        .bottom__btn {
+            right: 24px;
+            bottom: 50px;
+            width: 135px;
+            height: 34px;
+        }
+
+        .subtitle_btn_bottom {
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 21px;
+        }
+    }
+
+    @media (max-width: 365px) {
+        .menu__a {
+            font-size: 14px;
+        }
+
+        .menu__list {
+            margin-right: 17px;
+        }
+
+        .menu__i {
+            margin-left: 12px;
+        }
+
+        .menu__logo {
+            width: 30px;
+        }
+
+        .logo {
+            margin-right: 22px;
+            height: 90%;
+        }
+
+        .about__number_about {
+            margin-bottom: 15px;
+            width: 135px;
+        }
+
+        .about__numbers_org {
+            margin-left: 0;
+            max-width: 268px;
+        }
+
+        .about__number_org {
+            max-width: 138px
+        }
+
+        .descr_org {
+            width: 280px;
+        }
+
+        .descr_num_red {
+            width: 120px;
+            font-size: 14px;
+        }
+
+        .title_org {
+            margin: 0 auto;
+            width: 260px;
+        }
+
+        .org__img {
+            width: 120px;
+            display: block;
+            right: 26px;
+            top: 355px;
+        }
+
+        .descr_faq {
+            font-size: 10px;
+        }
+
+        .faq {
+            padding: 25px 15px 35px 15px;
+        }
+
+        .faq__icon {
+            right: 10px;
+            top: 17px;
+            width: 22px;
+            transition: 0.2s;
+        }
+
+        .title_bottom {
+            font-size: 18px;
+            width: 150px;
+        }
+
+        .bottom {
+            padding: 20px 10px 25px 18px;
+        }
+
+        .bottom__btn {
+            right: 18px;
+            bottom: 50px;
+            width: 115px;
+            height: 30px;
+        }
+
+        .subtitle_btn_bottom {
+            font-size: 15px;
+        }
+
+        .title_name {
+            font-size: 24px;
+        }
+
+        .text_rev {
+            font-size: 11px;
+        }
+
+        .subtitle_name {
+            width: 200px;
+            font-size: 11px;
+        }
+
+        .subtitle_name_small {
+            width: 200px;
+            font-size: 11px;
+        }
+
+        .review__item {
+            border: 4px solid #FFF2E0;
+        }
+    }
+}
+
+.close {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
